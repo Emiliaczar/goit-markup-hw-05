@@ -37,6 +37,7 @@ body {
   background-color: rgba(255, 255, 255, 0);
   transition: var(--transition);
   transition-property: color;
+  margin-bottom: -4px;
 }
 .actual-page::after,
 .navigation-list-link:hover::after {
