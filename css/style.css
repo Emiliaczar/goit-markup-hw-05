@@ -29,12 +29,14 @@ body {
 .navigation-list-link {
   color: var(--black);
   transition: var(--transition);
+  transition-property: color;
 }
 .navigation-list-link::after {
   content: " ";
   display: block;
   background-color: rgba(255, 255, 255, 0);
   transition: var(--transition);
+  transition-property: color;
 }
 .actual-page::after,
 .navigation-list-link:hover::after {
@@ -44,6 +46,7 @@ body {
   border-radius: 2px;
   background-color: var(--blue);
   top: 30px;
+  margin-bottom: -4px;
 }
 .actual-page {
   color: var(--blue);
@@ -154,6 +157,7 @@ a:focus {
 a {
   text-decoration: none;
   transition: var(--transition);
+  transition-property: color;
 }
 
 ul {
@@ -260,6 +264,7 @@ h4 {
   line-height: 1.6em;
   padding: 6px 22px;
   transition: var(--transition);
+  transition-property: color;
 }
 .button-portfolio {
   display: flex;
@@ -335,6 +340,7 @@ h4 {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.7em;
   transition: var(--transition);
+  transition-property: color;
 }
 .footer-mail {
   font-size: 14px;
@@ -342,6 +348,7 @@ h4 {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.7em;
   transition: var(--transition);
+  transition-property: color;
 }
 .team-background {
   background: #f5f4fa;
@@ -387,6 +394,7 @@ h4 {
   opacity: 0;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .portfolio-list-overlay-text {
   font-weight: 400;
@@ -511,6 +519,7 @@ footer {
 }
 .left-side-footer {
   margin-right: 70px;
+  margin-top: -13px;
 }
 
 .feature-picture {
@@ -553,6 +562,7 @@ footer {
   fill: #afb1b8;
   transition: color var(--transition);
   background-color: var(--transition);
+  transition-property: color;
 }
 .social-list-item-our-team:hover {
   background-color: var(--blue);
@@ -562,6 +572,7 @@ footer {
   width: 44px;
   height: 44px;
   transition: var(--transition);
+  transition-property: color, background-color;
 }
 
 .social-list-item-icon-our-team {
@@ -611,6 +622,7 @@ footer {
   color: #afb1b8;
   fill: #afb1b8;
   transition: color var(--transition);
+  transition-property: color;
 }
 .our-clients-list {
   list-style-type: none;
@@ -659,6 +671,7 @@ footer {
   color: var(--blue);
   fill: var(--blue);
   transition: var(--transition);
+  transition-property: color;
 }
 
 .clients-list-margins {
@@ -708,6 +721,7 @@ footer {
   opacity: 90%;
   transform: translatey(100%);
   transition: transform 250ms ease;
+  transition-property: transform;
 }
 .portfolio-item-feature {
   color: var(--grey);
@@ -727,6 +741,7 @@ footer {
 }
 .portfolio-item:hover .overlay {
   transform: translatey(0);
+  transition-property: transform;
 }
 .portfolio p {
   padding: 4px 24px 20px 24px;
@@ -738,7 +753,7 @@ footer {
 }
 .is-hidden {
   opacity: 0;
-  visibility: none;
+  visibility: hidden;
   pointer-events: none;
 }
 .close-btn {
@@ -768,6 +783,8 @@ footer {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transition: var(--transition);
+  transition-property: color;
 }
 
 .backdrop {
@@ -777,4 +794,6 @@ footer {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  transition-property: color;
 }
