@@ -564,7 +564,7 @@ footer {
   fill: #afb1b8;
   transition: color var(--transition);
   background-color: var(--transition);
-  transition-property: color;
+  transition-property: color, fill;
 }
 .social-list-item-our-team:hover {
   background-color: var(--blue);
@@ -619,7 +619,7 @@ footer {
   min-width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  margin-left: 30px;
+
   cursor: pointer;
   color: #afb1b8;
   fill: #afb1b8;
@@ -630,7 +630,6 @@ footer {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
 }
 .our-clients-list-icon1 {
   width: 41px;
